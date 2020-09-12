@@ -1,7 +1,11 @@
 [flake8]
 max-line-length = 130
-exclude=
+
+exclude =
     migrations,
     __pycache__,
     manage.py,
     settings.py
+
+per-file-ignores =
+    */__init__.py: E128
